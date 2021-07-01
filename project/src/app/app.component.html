@@ -1,0 +1,24 @@
+<div class="box" id="heading">
+  <h1>{{ title }}</h1>
+</div>
+<div class="box">
+  <app-persona
+    *ngFor="let personaElemento of persons; let i = index"
+    [persona]="personaElemento"
+    [indice]="i"
+  >
+  </app-persona>
+</div>
+<div class="box">
+  <app-formulario></app-formulario>
+  <hr />
+</div>
+
+<!-- <div class="container">
+    <h1>{{ titleCalculadora }}</h1>
+    <app-formulario-calculadora
+    (resultadoSuma) = "Proceso($event)">
+    </app-formulario-calculadora>
+    <app-resultado
+    [resultadoHijo] = "resultadoPadre"></app-resultado>
+</div> -->
